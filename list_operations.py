@@ -144,6 +144,7 @@ def replace_head(input_list):
 
     """
 
+    input_list[0] = 42
     pass
 
 
@@ -160,7 +161,8 @@ def replace_third_and_last(input_list):
     [0, 3, 37, 9, 12, 15, 18, 21, 24, 37]
 
     """
-
+    input_list[2] = 37
+    input_list[-1] = 37
     pass
 
 
