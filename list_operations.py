@@ -204,7 +204,8 @@ def delete_third_and_seventh(input_list):
     ['Do', 'Re', 'Fa', 'So', 'La', 'Do']
 
     """
-
+    input_list.pop(6) #same as popping index 2 first and then index 5, but this one is more easier to understand
+    input_list.pop(2)
     pass
 
 
