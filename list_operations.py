@@ -182,7 +182,12 @@ def replace_middle(input_list):
     [0, 3, 42, 37, 24, 27]
 
     """
-
+    num1 = input_list.pop()
+    num2 = input_list.pop()
+    input_list[2:] = []
+    input_list.extend([42,37])
+    input_list.append(num2)
+    input_list.append(num1)
     pass
 
 
