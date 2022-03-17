@@ -224,5 +224,6 @@ def delete_middle(input_list):
     ['Do', 'Re', 'Ti', 'Do']
 
     """
+    input_list[2:-2] = []
 
     pass
