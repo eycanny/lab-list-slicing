@@ -194,6 +194,31 @@ def custom_reverse(input_list):
         True
 
     """
+    #roundabout way of getting length of list
+    count = 0
+    
+    for value in input_list:
+        count +=1
+    
+
+    i = 0
+    position = -1
+    
+    #use count as loop limiter
+    while i < count:
+        #insert first number at position
+        input_list[position:position] += [input_list[0]]
+        #remove now duplicated number
+        del input_list[0]
+        #increment down so position is left of what it was
+        position = position - 1
+        #increment up
+        i += 1
+    
+    #previous loop reverses all except last item
+    input_list[0:0] += [input_list[-1]]
+    #delete copy still located as last item
+    del input_list[-1]
 
     pass
 
