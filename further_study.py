@@ -118,7 +118,6 @@ def custom_remove(input_list, value):
 
     pass
 
-#STOPPED HERE
 def custom_pop(input_list):
     """Remove the last item in the list and returns it.
 
@@ -151,8 +150,12 @@ def custom_index(input_list, value):
         1
 
     """
+    i = 0
 
-    return 0
+    for item in input_list:
+        if item == value:
+            return i
+        i += 1
 
 
 def custom_count(input_list, value):
