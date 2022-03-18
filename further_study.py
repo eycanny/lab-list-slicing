@@ -135,13 +135,9 @@ def custom_pop(input_list):
 
     """
     last_item = input_list[-1]
+    del input_list[-1]
 
-    for item in input_list:
-        if item != last_item:
-            new_list += [item]
-
-    return new_list
-
+    return last_item
 
 def custom_index(input_list, value):
     """Return the index of the first item of value found in input_list.
