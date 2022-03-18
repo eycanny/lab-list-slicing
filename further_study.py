@@ -88,21 +88,7 @@ def custom_insert(input_list, index, value):
 
     """
     # # front list, value, back list
-    # back_list = input_list[index:] #variable contains this list slice
-    # input_list = input_list[:index] #variable contains this list slice
-    # in_list.append(value) 
-    # front_list.extend(back_list)
-    # new_list = []
-    # i = 0
-
-    # for item in input_list:
-    #     if i == index:
-    #         new_list.append(value)
-    #         new_list.append(item)
-        
-    #     else:
-    #         new_list.append(item)
-    #         i += 1
+    input_list[index:index] = [value]
 
     pass
 
