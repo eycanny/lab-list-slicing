@@ -269,5 +269,3 @@ def custom_equality(some_list, another_list):
         else:
             i += 1
     return True
-
-    return None
